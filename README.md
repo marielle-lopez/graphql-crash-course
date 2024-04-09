@@ -7,6 +7,7 @@
 - [Apollo Sandbox](https://www.apollographql.com/docs/graphos/explorer/sandbox/)
   - Opens a dummy GraphQL server
 - [GraphQL: Syntax Highlighting VS Code extension](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql-syntax)
+- [TypeScript compiling issues](https://stackoverflow.com/questions/62619058/appending-js-extension-on-relative-import-statements-during-typescript-compilat)
 
 ## What is GraphQL?
 
@@ -136,3 +137,7 @@ The combination of all of the 'typeDefs' and relationships between them, as well
 ## Resolvers
 
 Resolvers handle requests or queries for data. The schema and the type definitions set up is like a map for Apollo to structure the graph; they don't handle queries. On the other hand, resolvers handle the queries based on the schema and type.
+
+## Query Variables
+
+What if you wanted to fetch a specific review, say, a review with ID 1? You need to use query variables. You also need to add additional entry points to accommodate for this feature.

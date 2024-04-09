@@ -6,6 +6,7 @@
   - Allows you to test and send queries to a GraphQL server to see the given responses
 - [Apollo Sandbox](https://www.apollographql.com/docs/graphos/explorer/sandbox/)
   - Opens a dummy GraphQL server
+- [GraphQL: Syntax Highlighting VS Code extension](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql-syntax)
 
 ## What is GraphQL?
 
@@ -101,3 +102,37 @@ query {
   }
 }
 ```
+
+## Making a project with Apollo Server
+
+- [Apollo Server documentation](https://www.apollographql.com/docs/apollo-server/getting-started)
+
+## Schema
+
+A schema describes the shape of the graph and the data available on it. Your GraphQL schema and the data available on it will be similar to the data you store in your database application.
+
+Every GraphQL server uses a schema to define the structure of data that clients can query.
+
+There are five basic scalar types you can use:
+
+- `int`
+- `float`
+- `string`
+- `boolean`
+- `ID` -- this is used by GraphQL as a key for data objects
+
+You can make your own types as well.
+
+You can make fields required by adding `!` to the end of a defined property.
+
+The `query` type is required when writing your 'typeDefs'. It defines the entry points to the graph and specifies the return types of such entry points. This is also a way of gatekeeping entry onto your graph.
+
+## Type Definitions ('typeDefs')
+
+Definitions of the different types of data we want expose on the graph. For example, you can make a 'typeDef' for an author data type and then specify the fields an author might have.
+
+The combination of all of the 'typeDefs' and relationships between them, as well as the diffrent kinds of queries that can be made combine up to make something called a schema.
+
+## Resolvers
+
+Resolvers handle requests or queries for data. The schema and the type definitions set up is like a map for Apollo to structure the graph; they don't handle queries. On the other hand, resolvers handle the queries based on the schema and type.

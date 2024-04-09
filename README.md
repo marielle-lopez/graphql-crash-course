@@ -2,6 +2,7 @@
 
 ## Resources
 
+- [GraphQL Crash Course by Net Ninja on YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUxtblNUahcsg0WLxmrK_y)
 - [Apollo Explorer](https://studio.apollographql.com/sandbox/explorer)
   - Allows you to test and send queries to a GraphQL server to see the given responses
 - [Apollo Sandbox](https://www.apollographql.com/docs/graphos/explorer/sandbox/)
